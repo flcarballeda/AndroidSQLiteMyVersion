@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SQL_APP</string>
+    <string name="strLoadInitialData">Cargar Datos</string>
+    <string name="textViewOwnerName">Nombre del propietario</string>
+    <string name="strLoadCars">Cargar Coches</string>
+    <string name="strUnknownOwner">Propietario desconocido.</string>
+    <string name="strNoCars">No es propietario de ningun coche.</string>
 </resources>

@@ -75,7 +75,7 @@ public class BaseDatosCochesPersona extends SQLiteOpenHelper {
         int aux_id = -1;
         String nombre_aux = null;
 
-        String consulta = "SELECT id, nombre FROM PERSONA WHERE nombre LIKE %"+nombre+"%;";
+        String consulta = "SELECT id, nombre FROM PERSONA WHERE nombre LIKE '%"+nombre+"%';";
 
 
         SQLiteDatabase basedatos = this.getReadableDatabase();
