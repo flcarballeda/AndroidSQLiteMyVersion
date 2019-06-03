@@ -1,5 +1,6 @@
 package edu.cftic.sql_app.vista;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -29,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
         //creo el objeto de la base de datos
 
         baseDatosCochesPersona = new BaseDatosCochesPersona(this, "MiDB", null, 1);
+    }
+
+    public void saltar(View v) {
+        Intent intent = new Intent( this, ListActivity.class);
+        startActivity( intent);
     }
 
     public void cargaInicial(View v) {
