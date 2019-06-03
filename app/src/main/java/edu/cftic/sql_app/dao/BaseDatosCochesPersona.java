@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.cftic.sql_app.dto.Coche;
+import edu.cftic.sql_app.dto.Listado;
 import edu.cftic.sql_app.dto.Persona;
 
 
@@ -97,8 +98,33 @@ public class BaseDatosCochesPersona extends SQLiteOpenHelper {
 
         return persona;
     }
+    public List<Listado> listarDatos() {
+        List<Listado> lista_coches = null;
+
+        String consulta = "select PERSONA.nombre, COCHE.modelo FROM PERSONA, COCHE Where PERSONA.id = COCHE.idpersona;";
+        SQLiteDatabase basedatos = this.getReadableDatabase();
+        Cursor cursor = basedatos.rawQuery(consulta, null);
 
 
+        if( cursor != null && cursor.getCount() >0)
+        {
+            cursor.moveToFirst();
+            lista_coches = new ArrayList<Listado>(cursor.getCount());
+
+            do
+            {
+                Listado listado = new Listado( cursor.getString(0), cursor.getString(1));
+                lista_coches.add(listado);
+
+            }while (cursor.moveToNext());
+
+            cursor.close();
+        }
+
+        this.cerrarBaseDatos(basedatos);
+
+        return lista_coches;
+    }
 
     public List<Coche> buscarCochesPersona (Persona persona)
     {
