@@ -60,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
         }
         Button boton = findViewById(R.id.buttonLoadCars);
         boton.setEnabled(true);
+        boton = findViewById(R.id.saltar);
+        boton.setEnabled(true);
     }
 
     public void buscarCochesPersona(View v) {

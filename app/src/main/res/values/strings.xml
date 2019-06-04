@@ -5,4 +5,6 @@
     <string name="strLoadCars">Cargar Coches</string>
     <string name="strUnknownOwner">Propietario desconocido.</string>
     <string name="strNoCars">No es propietario de ningun coche.</string>
+    <string name="headerPersona">Persona</string>
+    <string name="headerCoche">Coche</string>
 </resources>

@@ -2,6 +2,7 @@ package edu.cftic.sql_app.vista;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -47,5 +48,6 @@ public class ListActivity extends AppCompatActivity {
         recView.setAdapter(adaptador);
 
         recView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-    }
+        recView.addItemDecoration(
+                new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));    }
 }

@@ -81,6 +81,7 @@
         android:layout_marginRight="8dp"
         android:onClick="saltar"
         android:text="Listado"
+        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewResults" />
