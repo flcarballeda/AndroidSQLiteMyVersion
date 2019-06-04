@@ -7,4 +7,10 @@
     <string name="strNoCars">No es propietario de ningun coche.</string>
     <string name="headerPersona">Persona</string>
     <string name="headerCoche">Coche</string>
+    <string name="spinner_sort_prompt">Método de ordenación:</string>
+    <string-array name="spinnerSortItems">
+        <item>Ninguno</item>
+        <item>Personas</item>
+        <item>Coches</item>
+    </string-array>
 </resources>

@@ -9,11 +9,14 @@
         android:id="@+id/LblPersona"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_weight="30" />
+        android:layout_weight="30">
+    </TextView>
 
     <TextView
         android:id="@+id/LblCoche"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="70" />
+        android:layout_weight="70">
+    </TextView>
+
 </LinearLayout>
